@@ -24,7 +24,7 @@ if [ -n "$ENVOY_BASE_ID" ]; then
   ENVOY_ARGS="$ENVOY_ARGS --base-id $ENVOY_BASE_ID"
 fi
 
-/usr/local/bin/envtemplate \
+envtemplate \
   -in /etc/envoy/bootstrap.conf.tmpl \
   -out /etc/envoy/bootstrap.conf
 
